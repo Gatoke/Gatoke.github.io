@@ -10,28 +10,78 @@
     <!-- BOOTSTRAP -->
     <script src="bootstrap-4.3.1-dist/bootstrap.min.js"></script>
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/bootstrap.min.css">
+    <!-- FONT AWESOME-->
+    <script src="fontawesome.js"></script>
+
     <!-- OWN -->
     <link href="style.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 <body>
 
-<div style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
+<!-- Vertical navbar -->
+<div class="vertical-nav" id="sidebar">
+    <div class="py-4 px-3 mb-4">
+        <div class="media d-flex align-items-center">
+            <img src="myphoto.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+            <div class="media-body">
+                <h4 class="m-0 text-light">Karol Dominiak</h4>
+                <p class="text-gray mb-0">Java Software Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">&#8226; Full name</p>
+    <ul class="nav flex-column mb-0">
+        <li class="nav-item">
+            <a href="#" class="nav-link text-light">
+                <i class="mr-3 text-primary"></i>
+                Karol Dominiak
+            </a>
+        </li>
+    </ul>
+
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">&#8226; City</p>
+    <ul class="nav flex-column mb-0">
+        <li class="nav-item">
+            <a href="#" class="nav-link text-light">
+                <i class="mr-3 text-primary "></i>
+                Warsaw
+            </a>
+        </li>
+    </ul>
+
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">&#8226; Phone</p>
+    <ul class="nav flex-column mb-0">
+        <li class="nav-item">
+            <a href="#" class="nav-link text-light">
+                <i class="mr-3 text-primary "></i>
+                +48 600 380 904
+            </a>
+        </li>
+    </ul>
+
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">&#8226; E-mail</p>
+    <ul class="nav flex-column mb-0">
+        <li class="nav-item">
+            <a href="#" class="nav-link text-light">
+                <i class="mr-3 text-primary "></i>
+                karoldominiak94@gmail.com
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- End vertical navbar -->
+
+<div class="page-content" id="content">
 
     <div style="padding-left: 10%; padding-right: 10%">
-        <div class="row shadow section">
-            <div class="col-5 col-md-6 col-lg-2" style="text-align: left; padding: 10px">
-                <img src="myphoto.png" alt="my-photo" style="height: 150px">
-            </div>
-            <div id="personal-info" class="col-7 col-md-6 col-lg-4">
-                <div>Full name: Karol Dominiak</div>
-                <div>City: Warsaw</div>
-                <div>Phone: +48 600 380 904</div>
-                <div>E-mail: karoldominiak94@gmail.com</div>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-6" style="text-align: center; margin: auto; font-size: x-large; font-weight: bold">
-                CURRICULUM VITAE
-            </div>
+
+        <div style="margin-top: 20px;">
+            <button id="sidebarCollapse" type="button" class="btn btn-dark bg-transparent shadow-sm px-4" style="border: 0">
+                <i class="fa fa-bars"></i></button>
         </div>
 
         <div class="row shadow section">
@@ -62,7 +112,8 @@
                     </div>
                     <div class="col-sm-12 col-md-7" style="text-align: left">
                         <div><u>Junior Software Developer</u></div>
-                        <p>Development of financial application related to Forex as a full stack developer with an emphasis on back-end.</p>
+                        <p>Development of financial application related to Forex as a full stack developer with an
+                            emphasis on back-end.</p>
                     </div>
                     <div class="col-sm-12 col-md-3" style="text-align: right">
                         <div>Cinkciarz.pl Sp. z o.o</div>
@@ -124,8 +175,12 @@
                         Languages & frameworks
                     </div>
                     <div class="col-sm-12 col-md-10">
-                        <div>- Java 8+, Spring Boot, Gradle (sample project: <a href="https://github.com/Gatoke/offers">https://github.com/Gatoke/offers</a>);</div>
-                        <div>- Little experience with Kotlin (presentation: <a href="https://github.com/Gatoke/kotlin-introduction">https://github.com/Gatoke/kotlin-introduction</a>);</div>
+                        <div>- Java 8+, Spring Boot, Gradle (sample project: <a
+                                href="https://github.com/Gatoke/offers">https://github.com/Gatoke/offers</a>);
+                        </div>
+                        <div>- Little experience with Kotlin (presentation: <a
+                                href="https://github.com/Gatoke/kotlin-introduction">https://github.com/Gatoke/kotlin-introduction</a>);
+                        </div>
                         <div>- Spock.</div>
                     </div>
                 </div>
@@ -171,7 +226,8 @@
                         2019
                     </div>
                     <div class="col-sm-12 col-md-7">
-                        Participation in hackaton - <i>WAWCODE "Koduj dla Warszawy"</i> - as a back-end developer (<a href="http://wawcode.pl/">http://wawcode.pl/</a>).
+                        Participation in hackaton - <i>WAWCODE "Koduj dla Warszawy"</i> - as a back-end developer
+                        (<a href="http://wawcode.pl/">http://wawcode.pl/</a>).
                     </div>
                     <div class="col-sm-12 col-md-3" style="text-align: right">
                         Warsaw, Startberry
@@ -240,6 +296,12 @@
             </div>
         </div>
     </div>
+
+</div>
+
+
+<div style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
+
 </div>
 
 
