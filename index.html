@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Curriculum Vitae - Karol Dominiak</title>
 
+<!-- POPPER JS-->
+    <script src="popper.min.js"></script>
     <!-- JQUERY -->
     <script src="jquery/jquery-3.4.1.min.js"></script>
     <!-- BOOTSTRAP -->
@@ -12,7 +14,8 @@
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/bootstrap.min.css">
     <!-- FONT AWESOME-->
     <script src="fontawesome.js"></script>
-
+    <!-- ANIMATE.CSS -->
+    <link href="animate.css" rel="stylesheet">
     <!-- OWN -->
     <link href="style.css" rel="stylesheet">
     <link href="navbar.css" rel="stylesheet">
@@ -25,7 +28,7 @@
 <div class="vertical-nav" id="sidebar">
     <div class="py-4 px-3 mb-4">
         <div class="media d-flex align-items-center">
-            <img src="myphoto.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+            <img src="myphoto.png" alt="my-photo" width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
             <div class="media-body">
                 <h4 class="m-0 text-light">Karol Dominiak</h4>
                 <p class="text-gray mb-0">Java Software Developer</p>
@@ -56,7 +59,7 @@
     <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">&#8226; Phone</p>
     <ul class="nav flex-column mb-0">
         <li class="nav-item">
-            <a href="#" class="nav-link text-light">
+            <a href="tel:+48600380904" class="nav-link text-light" data-placement="bottom" data-toggle="tooltip" title="Click to call">
                 <i class="mr-3 text-primary "></i>
                 +48 600 380 904
             </a>
@@ -66,8 +69,8 @@
     <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">&#8226; E-mail</p>
     <ul class="nav flex-column mb-0">
         <li class="nav-item">
-            <a href="#" class="nav-link text-light">
-                <i class="mr-3 text-primary "></i>
+            <a href="mailto:karoldominiak94@gmail.com" class="nav-link text-light" data-placement="bottom" data-toggle="tooltip" title="Click to send mail">
+                <i class="mr-3 text-primary"></i>
                 karoldominiak94@gmail.com
             </a>
         </li>
@@ -80,7 +83,8 @@
     <div style="padding-left: 10%; padding-right: 10%">
 
         <div style="margin-top: 20px;">
-            <button id="sidebarCollapse" type="button" class="btn btn-dark bg-transparent shadow-sm px-4" style="border: 0">
+            <button id="sidebarCollapse" type="button" class="btn btn-dark bg-transparent shadow-sm px-4 animated rubberBand infinite"
+                    style="border: 0">
                 <i class="fa fa-bars"></i></button>
         </div>
 
