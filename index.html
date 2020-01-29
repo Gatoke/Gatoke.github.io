@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Curriculum Vitae - Karol Dominiak</title>
 
-<!-- POPPER JS-->
+    <!-- POPPER JS-->
     <script src="popper.min.js"></script>
     <!-- JQUERY -->
     <script src="jquery/jquery-3.4.1.min.js"></script>
@@ -38,8 +38,8 @@
 
     <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">&#8226; Full name</p>
     <ul class="nav flex-column mb-0">
-        <li class="nav-item">
-            <a href="#" class="nav-link text-light">
+        <li class="nav-item" data-placement="bottom" data-toggle="tooltip" title="Go to LinkedIn profile">
+            <a href="https://www.linkedin.com/in/karol-dominiak/" target="_blank" class="nav-link text-light">
                 <i class="mr-3 text-primary"></i>
                 Karol Dominiak
             </a>
@@ -48,8 +48,8 @@
 
     <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">&#8226; City</p>
     <ul class="nav flex-column mb-0">
-        <li class="nav-item">
-            <a href="#" class="nav-link text-light">
+        <li class="nav-item" data-placement="bottom" data-toggle="tooltip" title="See on Google Maps">
+            <a href="#" class="nav-link text-light" data-toggle="modal" data-target="#googleMaps">
                 <i class="mr-3 text-primary "></i>
                 Warsaw
             </a>
@@ -58,8 +58,8 @@
 
     <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">&#8226; Phone</p>
     <ul class="nav flex-column mb-0">
-        <li class="nav-item">
-            <a href="tel:+48600380904" class="nav-link text-light" data-placement="bottom" data-toggle="tooltip" title="Click to call">
+        <li class="nav-item" data-placement="bottom" data-toggle="tooltip" title="Call">
+            <a href="tel:+48600380904" class="nav-link text-light">
                 <i class="mr-3 text-primary "></i>
                 +48 600 380 904
             </a>
@@ -68,8 +68,8 @@
 
     <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">&#8226; E-mail</p>
     <ul class="nav flex-column mb-0">
-        <li class="nav-item">
-            <a href="mailto:karoldominiak94@gmail.com" class="nav-link text-light" data-placement="bottom" data-toggle="tooltip" title="Click to send mail">
+        <li class="nav-item" data-placement="bottom" data-toggle="tooltip" title="Send e-mail">
+            <a href="mailto:karoldominiak94@gmail.com" class="nav-link text-light">
                 <i class="mr-3 text-primary"></i>
                 karoldominiak94@gmail.com
             </a>
@@ -80,10 +80,11 @@
 
 <div class="page-content" id="content">
 
-    <div style="padding-left: 10%; padding-right: 10%">
+    <div style="padding-left: 10%; padding-right: 10%; padding-bottom: 50px">
 
         <div style="margin-top: 20px;">
-            <button id="sidebarCollapse" type="button" class="btn btn-dark bg-transparent shadow-sm px-4 animated rubberBand infinite"
+            <button id="sidebarCollapse" type="button"
+                    class="btn btn-dark bg-transparent shadow-sm px-4 animated rubberBand infinite"
                     style="border: 0">
                 <i class="fa fa-bars"></i></button>
         </div>
@@ -222,38 +223,6 @@
 
         <div class="row shadow section" style="text-align: left">
             <div class="col-md-12 col-lg-2" style="font-size: small">
-                <b><i class="fas fa-users"></i> OUTSIDE OF WORK</b>
-            </div>
-            <div class="col-md-12 col-lg-10">
-                <div class="row">
-                    <div class="col-sm-12 col-md-2">
-                        2019
-                    </div>
-                    <div class="col-sm-12 col-md-7">
-                        Participation in hackaton - <i>WAWCODE "Koduj dla Warszawy"</i> - as a back-end developer
-                        (<a href="http://wawcode.pl/">http://wawcode.pl/</a>).
-                    </div>
-                    <div class="col-sm-12 col-md-3" style="text-align: right">
-                        Warsaw, Startberry
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-sm-12 col-md-2">
-                        2019 & 2018
-                    </div>
-                    <div class="col-sm-12 col-md-7">
-                        Participation in <i>Greenfield Conference</i> (<a href="https://greenfieldconf.pl/">https://greenfieldconf.pl/</a>).
-                    </div>
-                    <div class="col-sm-12 col-md-3" style="text-align: right">
-                        Zielona Góra, University of Zielona Góra
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row shadow section" style="text-align: left">
-            <div class="col-md-12 col-lg-2" style="font-size: small">
                 <b><i class="fas fa-certificate"></i> CERTIFICATES</b>
             </div>
             <div class="col-md-12 col-lg-10">
@@ -299,15 +268,69 @@
                 </div>
             </div>
         </div>
+
+        <div class="row shadow section" style="text-align: left">
+            <div class="col-md-12 col-lg-2" style="font-size: small">
+                <b><i class="fas fa-users"></i> OUTSIDE OF WORK</b>
+            </div>
+            <div class="col-md-12 col-lg-10">
+                <div class="row">
+                    <div class="col-sm-12 col-md-2">
+                        2019
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                        Participation in hackaton - <i>WAWCODE "Koduj dla Warszawy"</i> - as a back-end developer
+                        (<a href="http://wawcode.pl/">http://wawcode.pl/</a>).
+                    </div>
+                    <div class="col-sm-12 col-md-3" style="text-align: right">
+                        Warsaw, Startberry
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12 col-md-2">
+                        2019 & 2018
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                        Participation in <i>Greenfield Conference</i> (<a href="https://greenfieldconf.pl/">https://greenfieldconf.pl/</a>).
+                    </div>
+                    <div class="col-sm-12 col-md-3" style="text-align: right">
+                        Zielona Góra, University of Zielona Góra
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="googleMaps" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Localization</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312779.9431310756!2d20.781016711291045!3d52.232606289062204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1580298971645!5m2!1spl!2spl"
+                            frameborder="0"
+                            style="margin: auto;width:100%;height:50vh"
+                            allowfullscreen=""></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default shadow" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </div>
 
-
-<div style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
-
-</div>
-
+<!--<div style="text-align: center; padding-top: 50px; padding-bottom: 50px;">-->
+<!--</div>-->
 
 </body>
 
